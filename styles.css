@@ -295,3 +295,14 @@ footer {
 }
 
 footer a { color: #fff; }
+
+.footer-link {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
+
+.footer-link a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
