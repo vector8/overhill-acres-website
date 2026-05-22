@@ -76,32 +76,46 @@ nav a.active { border-bottom: 2px solid var(--green-dark); }
 
 .hero {
   background: linear-gradient(180deg, var(--green-light), var(--cream));
-  padding: 4rem 1.5rem 3rem;
+  padding: 3.5rem 1.5rem 2rem;
   text-align: center;
-}
-
-.hero img.logo {
-  max-width: 220px;
-  height: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0 0.5rem;
   color: var(--green-dark);
+  font-size: 2.75rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.15;
+}
+
+.hero-image {
+  display: block;
+  margin: 0 auto 1.5rem;
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(31, 94, 46, 0.18);
 }
 
 .hero p.tagline {
-  font-size: 1.2rem;
   color: var(--muted);
-  margin: 0;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media (max-width: 720px) {
+  .hero { padding: 2.5rem 1.5rem 1.5rem; }
+  .hero h1 { font-size: 2rem; margin-bottom: 1.25rem; }
+  .hero-image { max-width: 280px; margin-bottom: 1.25rem; }
+  .hero p.tagline { font-size: 1.05rem; }
 }
 
 main {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 2rem 1.5rem 3rem;
 }
 
 section { margin-bottom: 3rem; }
