@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Overhill Acres Farm — Honey, Eggs &amp; More from Carleton, NS</title>
+<meta name="description" content="Overhill Acres Farm in Carleton, Nova Scotia. Local honey and bee products, farm-fresh eggs, and seasonal vegetables." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Overhill Acres Farm logo" />
+      <span class="brand-text">Overhill Acres Farm</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="logo.png" alt="Overhill Acres Farm" class="logo" />
+  <h1>Overhill Acres Farm</h1>
+  <p class="tagline">Honey, eggs, and good things from our corner of Nova Scotia.</p>
+</section>
+
+<main>
+
+  <section id="about">
+    <h2>About the Farm</h2>
+    <p>
+      Overhill Acres Farm is a small family farm tucked into the rolling countryside of
+      Carleton, Nova Scotia. We've been working this land since 2022, raising bees,
+      keeping a happy flock of laying hens, and growing more vegetables than we know what
+      to do with each summer.
+    </p>
+    <p>
+      Everything we sell comes straight from our property — no middle steps, no long
+      drives, no mystery. If you'd like to know exactly where your food comes from, you
+      can come see for yourself.
+    </p>
+  </section>
+
+  <section id="products">
+    <h2>What We Sell</h2>
+    <div class="products">
+      <div class="product-card">
+        <h3>Honey &amp; Bee Products</h3>
+        <p>Raw honey from our hives, plus seasonal bee products as they're available.</p>
+      </div>
+      <div class="product-card">
+        <h3>Farm-Fresh Eggs</h3>
+        <p>Eggs from our pasture-raised hens, gathered daily.</p>
+      </div>
+      <div class="product-card">
+        <h3>Seasonal Vegetables</h3>
+        <p>Whatever the garden gives us a surplus of — ask what's in season.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="where-to-find-us">
+    <h2>Where to Find Us</h2>
+    <p>
+      You can buy directly from the farm at <strong>4749 Highway 340, Carleton, NS</strong>,
+      or catch us at local farmers' markets throughout the season. Reach out if you're
+      not sure when we'll be open — we're happy to set up a time.
+    </p>
+    <p><a href="contact.html">Get in touch &rarr;</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Overhill Acres Farm · 4749 Highway 340, Carleton, NS</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

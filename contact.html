@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Overhill Acres Farm</title>
+<meta name="description" content="Get in touch with Overhill Acres Farm in Carleton, Nova Scotia." />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">
+      <img src="logo.png" alt="Overhill Acres Farm logo" />
+      <span class="brand-text">Overhill Acres Farm</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section>
+    <h2>Get in Touch</h2>
+    <p>
+      Questions about what we have in stock, want to arrange a farm visit, or curious
+      whether we'll be at your local market this weekend? Drop us a line — we'd love to
+      hear from you.
+    </p>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <p><strong>Farm address</strong><br />
+          4749 Highway 340<br />
+          Carleton, NS</p>
+
+        <p><strong>Email</strong><br />
+          <a href="mailto:contact@overhill-acres.ca">contact@overhill-acres.ca</a></p>
+
+        <p><strong>Find us online</strong></p>
+        <div class="social">
+          <a href="https://www.facebook.com/overhill.acres" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.instagram.com/overhill.acres/" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </div>
+
+      <form id="contact-form">
+        <div class="form-success" data-fs-success>Thanks! Your message has been sent — we'll get back to you soon.</div>
+        <div class="form-error" data-fs-error></div>
+
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" data-fs-field required />
+        <span class="field-error" data-fs-error="name"></span>
+
+        <label for="email">Your email</label>
+        <input type="email" id="email" name="email" data-fs-field required />
+        <span class="field-error" data-fs-error="email"></span>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" data-fs-field required></textarea>
+        <span class="field-error" data-fs-error="message"></span>
+
+        <button type="submit" data-fs-submit-btn>Send message</button>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Overhill Acres Farm · 4749 Highway 340, Carleton, NS</p>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'xwvzojoy' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</body>
+</html>
