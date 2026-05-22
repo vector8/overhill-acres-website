@@ -6,6 +6,8 @@
   --text: #1f2a22;
   --muted: #5a6b5f;
   --border: #d7e1d9;
+  --honey: #f4c542;
+  --honey-deep: #b07c0c;
 }
 
 * { box-sizing: border-box; }
@@ -20,7 +22,7 @@ html, body {
 }
 
 a { color: var(--green-dark); }
-a:hover { color: var(--green-mid); }
+a:hover { color: var(--honey-deep); }
 
 header.site-header {
   background: #fff;
@@ -295,6 +297,7 @@ footer {
 }
 
 footer a { color: #fff; }
+footer a:hover { color: var(--honey); }
 
 .footer-link {
   margin: 0.4rem 0 0;
