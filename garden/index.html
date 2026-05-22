@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Garden</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8C%B1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <header class="site-header">
+    <h1><span class="logo-leaf">🌿</span> Overhill Acres Garden Viewer <span class="logo-leaf">🌿</span></h1>
+    <p class="tagline">A little patch of dirt, growing things.</p>
+  </header>
+
+  <main id="app">
+    <div class="loading">
+      <div class="loading-leaf">🌱</div>
+      <p>Checking on the garden…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Tended by hand. <span id="last-fetched"></span></p>
+  </footer>
+
+  <template id="bed-card-template">
+    <article class="bed-card">
+      <header class="bed-header">
+        <h2 class="bed-name"></h2>
+        <span class="bed-badge"></span>
+      </header>
+      <div class="bed-photos"></div>
+      <div class="bed-allocation">
+        <div class="allocation-bar"></div>
+        <p class="allocation-empty-label"></p>
+      </div>
+      <ul class="plant-list"></ul>
+      <footer class="bed-footer">
+        <span class="bed-notes"></span>
+        <span class="bed-updated"></span>
+      </footer>
+    </article>
+  </template>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
